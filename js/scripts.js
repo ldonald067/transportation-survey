@@ -4,7 +4,8 @@ $(document).ready(function(){
     $("#work-responses").show();
     $("input:checkbox[name=work-transportation]:checked").each(function(){
       var workTransportationMode = $(this).val();
-      $('#work-responses').append(workTransportationMode + "<br>");
+      var capitalWorkTransportationMode = workTransportationMode.toUpperCase();
+      $('#work-responses').append(capitalWorkTransportationMode + "<br>");
     });
     $("#fun-responses").show();
     $("input:checkbox[name=fun-transportation]:checked").each(function(){
